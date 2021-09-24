@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vincent Schellekens: research homepage</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="vs_style.css" />
+</head>
+
+<body>
+<div id="main_wrapper">
+  <!-- HEADER -->
+  <header>
+    <img src="img/me.jpg" alt="Picture of myself" title="That's me!" id="selfie" />
+    <div id="name_and_logos">
+    <h1><strong>Vincent Schellekens</strong><br /> postdoc researcher</h1>
+    <div id="logos_cont">
+      <a href="http://www.fnrs.be"><img src="img/logo_FNRS.png" alt="FNRS logo" title="Fonds National de la Recherche Scientifique" /></a>
+      <a href="https://uclouvain.be"><img src="img/logo_UCL.jpg" alt="UCLouvain logo" title="Université catholique de Louvain" /></a>
+      <a href="https://uclouvain.be/en/research-institutes/icteam"><img src="img/logo_ICTEAM.png" alt="ICTEAM logo" title="Institute of Information and Communication Technologies, Electronics and Applied Mathematics" /></a>
+      <a href="https://sites.uclouvain.be/ispgroup/Main/HomePage"><img src="img/logo_ISPG.png" alt="UCLouvain logo" title="Image and Signal Processing Group" /></a>
+    </div>
+    </div>
+  </header>
+
+  <div id="middle_wrapper">
+
+  <!-- NAV -->
+  <nav>
+    <table>
+      <tr><td><a href="index.html"><div class="nav_button">Home</div></a></td></tr>
+      <tr><td><a href="about.html"><div class="nav_button">About me</div></a></td></tr>
+      <tr><td><a href="research.html"><div class="nav_button_on">Research</div></a></td></tr>
+      <tr><td><a href="publi.html"><div class="nav_button">Publications</div></a></td></tr>
+      <tr><td><a href="code.html"><div class="nav_button">Code</div></a></td></tr>
+    </table>
+  </nav>
+
+  <!-- MAIN SECTION -->
+  <section>
+    <p>My research focuses on <a href="#MY_research">different aspects</a> of a framework called "Compressive Learning" (aka "Sketched Learning").</p>
+    <h2>What is Compressive Learning?</h2>
+    <h3>Limitations of usual Machine Learning</h3>
+    <p>In <em>Machine Learning</em> (ML), a mathematical model (such as a prediction rule) is not hand-crafted by a human expert but automatically discovered from a large set of learning examples (Fig. 1). In recent years, ML has had tremenduous success (amongst others, in the field of Artificial Intelligence); this is possible thanks to the improvement of ML methods, but also thanks to the <em>ever-increasing abundance of data</em> to learn from.</p>
+    <figure class="research_illu">
+      <img src="img/research/ML.png" alt="Usual Machine Learning workflow" />
+      <figcaption>Figure 1: the classical Machine Learning workfow.</figcaption>
+    </figure>
+    <p>Usually, machine learning methods need access to the data multiple times during training. This becomes problematic when the dataset is very large (which is the case for modern datasets): a large memory is required to store all this data, and reading it repeatedly takes a lot of time.</p>
+    <h3>Compressive Learning</h3>
+    One attempt to solve this problem is <em>Compressive Learning</em>, a framework introduced by Rémi Gribonval, Nicolas Keriven and co-authors (<a href="https://team.inria.fr/panama/projects/please/compressive-learning/">more</a>). The idea is to break down expensive learning into two cheaper steps: sketching and the actual "learning" (Fig. 2). 
+    <figure class="research_illu">
+      <img src="img/research/CL.png" alt="Compressive Learning workflow" />
+      <figcaption>Figure 2: the Compressive Learning workfow.</figcaption>
+    </figure>
+    <p>
+      <ul>
+        <li><strong>Sketching</strong> amounts to compressing the dataset <em>as a whole</em> instead of element-by-element (more precisely, by computing a set of randomly generated generalized moments of the data). This summary of the dataset is called the <em>sketch</em>, and by construction its size does not grow with the number of examples in the dataset. In addition, the sketch is light to compute (can be done in parallel, on-line, on decentralized machines,...) and allows to delete the data after only looking at it only once.</li>
+        <li><strong>Learning</strong> amounts to extracting the target mathematical model, from the sketch only (thus requiring less computational resources than usual learning). This step involves solving an <em>inverse problem</em>, inspired from usual Compressed Sensing.</li>
+      </ul>
+    </p>
+
+    <h2 id="MY_research">What problems do I focus on?</h2>
+    <p>Here are some questions about Compressive Learning that I try to answer in my PhD research:
+      <ul>
+        <li>Is it possible to make the sketching step more efficient? Ideally, is it possible to design a hardware system that computes the sketch contribution of a signal without aquiring it at all? In particular, in a practical digital system we need to quantize the sketch: how does this impact the learning performances?</li>
+        <li>Can Compressive Learning be extended to new learning tasks (up to now, only K-Means and GMM estimation have been explored), to do for example classification or regression? Can Compressive Learnign be used on more complex but structured data than current applications?</li>
+        <li>Can we obtain formal guarantees on the practical algorithms used in the learning step? Can the existing algorithms be made more efficient?</li>
+        <li>Is it possible to use the sketch mechanism to provide some privacy guarantees for the users contributing to the database?</li>
+        <li>...</li>
+      </ul>
+    </p>
+  </section>
+
+</div> <!-- middle_wrapper -->
+
+  <!-- FOOTER -->
+  <footer>
+    Webmaster: Vincent Schellekens.
+  </footer>
+</div> <!-- main wrapper-->
+</body>
+
+</html>

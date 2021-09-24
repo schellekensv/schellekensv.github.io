@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vincent Schellekens: research homepage</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="vs_style.css" />
+</head>
+
+<body>
+<div id="main_wrapper">
+  <!-- HEADER -->
+  <header>
+    <img src="img/me.jpg" alt="Picture of myself" title="That's me!" id="selfie" />
+    <div id="name_and_logos">
+    <h1><strong>Vincent Schellekens</strong><br /> postdoc researcher</h1>
+    <div id="logos_cont">
+      <a href="http://www.fnrs.be"><img src="img/logo_FNRS.png" alt="FNRS logo" title="Fonds National de la Recherche Scientifique" /></a>
+      <a href="https://uclouvain.be"><img src="img/logo_UCL.jpg" alt="UCLouvain logo" title="Université catholique de Louvain" /></a>
+      <a href="https://uclouvain.be/en/research-institutes/icteam"><img src="img/logo_ICTEAM.png" alt="ICTEAM logo" title="Institute of Information and Communication Technologies, Electronics and Applied Mathematics" /></a>
+      <a href="https://sites.uclouvain.be/ispgroup/Main/HomePage"><img src="img/logo_ISPG.png" alt="UCLouvain logo" title="Image and Signal Processing Group" /></a>
+    </div>
+    </div>
+  </header>
+
+  <div id="middle_wrapper">
+
+  <!-- NAV -->
+  <nav>
+    <table>
+      <tr><td><a href="index.html"><div class="nav_button">Home</div></a></td></tr>
+      <tr><td><a href="about.html"><div class="nav_button">About me</div></a></td></tr>
+      <tr><td><a href="research.html"><div class="nav_button">Research</div></a></td></tr>
+      <tr><td><a href="publi.html"><div class="nav_button_on">Publications</div></a></td></tr>
+      <tr><td><a href="code.html"><div class="nav_button">Code</div></a></td></tr>
+    </table>
+  </nav>
+
+  <!-- MAIN SECTION -->
+  <section>
+    <h2>Pending publications</h2>
+    <ol>
+      
+        
+      <li><div class="publi">
+        <strong>Asymmetric compressive learning guarantees with applications to quantized sketches</strong><br />
+        <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        Submitted.
+        <div class="publi_links">
+          <a href="https://arxiv.org/abs/2104.10061" title="arXiv:2104.10061">arXiv</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'The compressive learning framework reduces the computational cost of training on large-scale datasets. In a sketching phase, the data is first compressed to a lightweight sketch vector, obtained by mapping the data samples through a well-chosen feature map, and averaging those contributions. In a learning phase, the desired model parameters are then extracted from this sketch by solving an optimization problem, which also involves a feature map. When the feature map is identical during the sketching and learning phases,  formal statistical guarantees (excess risk bounds) have been proven. However, the desirable properties of the feature map are different during sketching and learning (e.g., quantized outputs,  and differentiability, respectively). We thus study the relaxation where this map is allowed to be different for each phase. First, we prove that the existing guarantees carry over to this asymmetric scheme, up to a controlled error term, provided some Limited Projected Distortion (LPD) property holds. We then instantiate this framework to the setting of quantized sketches, by proving that the LPD indeed holds for binary sketch contributions. Finally, we further validate the approach with numerical simulations, including a large-scale application in audio event classification.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+        
+      <li><div class="publi">
+        <strong>Sketching Datasets for Large-Scale Learning</strong><br />
+        <mark>Rémi Gribonval, Antoine Chatalic, Nicolas Keriven</mark>, <em>Vincent Schellekens</em>, <mark>Laurent Jacques, Philip Schniter</mark><br />
+        Submitted. 
+        <div class="publi_links">
+          <a href="https://arxiv.org/abs/2008.01839" title="arXiv:2008.01839">arXiv</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'This article considers \'sketched learning,\' or\' compressive learning,\' an approach to large-scale machine learning where datasets are massively compressed before learning (eg, clustering, classification, or regression) is performed. In particular, a\' sketch\' is first constructed by computing carefully chosen nonlinear random features (eg, random Fourier features) and averaging them over the whole dataset. Parameters are then learned from the sketch, without access to the original dataset. This article surveys the current state-of-the-art in sketched learning, including the main concepts and algorithms, their connections with established signal-processing methods, existing theoretical guarantees---on both information preservation and privacy preservation, and important open problems.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+    </ol>
+      
+      
+    <h2>Thesis</h2>
+    <ol>
+      <li><div class="publi">
+        <strong>Extending the Compressive Statistical Learning Framework: Quantization, Privacy, and Beyond</strong>
+        <div class="download_icon">
+          <a href="Resources/thesis.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div> <br />
+        <em>Vincent Schellekens</em>
+        <div class="abstract" onClick="showAbstract(this,'Over the last few years, machine learning—the discipline of automatically fitting mathematical models or rules from data—revolutionized science, engineering, and our society. This revolution is powered by the ever-increasing amounts of digitally recorded data, which are growing at an exponential rate. However, these advances do not come for free, as they incur important computational costs, such as memory requirements, execution time, or energy consumption. To reconcile learning from large-scale data with a reasoned use of computational resources, it seems crucial to research new learning paradigms.
+        A particularly promising candidate is the compressive statistical learning framework. In a nutshell, the idea of this method is to first compress the learning data, in an efficient manner, as lightweight sketch vector (given by random feature moments of the data). The desired learning methods are then carried out using only this sketch, instead of the full dataset, which can sometimes save orders of magnitude of computational resources.
+        This thesis broadens the scope of the compressive learning framework by exploring three extensions of it. First, the quantization of sketch contributions is studied, which allows to further reduce the computational burden associated with computing the sketch. Second, the addition of a privacy-protecting layer on top of the sketch is considered, which allows to learn from the sketch while ensuring the privacy of the data contributors. Finally, generalizations of the framework to novel tasks are discussed.');" style="font-style: italic;">(More)</div>
+      </div></li>
+      </ol>
+      
+      
+
+    <h2>Journal papers</h2>
+    <ol>
+        
+      <li><div class="publi">
+        <strong>Breaking the waves: asymmetric random periodic features for low-bitrate kernel machines</strong>
+        <div class="download_icon">
+          <a href="Resources/InfAndInf_BTW.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div> <br />
+        <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        Accepted in: Information and Inference: A Journal of the IMA.
+        <div class="publi_links">
+          <a href="https://arxiv.org/abs/2004.06560" title="arXiv:2004.06560">arXiv</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'Many signal processing and machine learning applications are built from evaluating a kernel on pairs of signals, e.g. to assess the similarity of an incoming query to a database of known signals. This nonlinear evaluation can be simplified to a linear inner product of the random Fourier features of those signals: random projections followed by a periodic map, the complex exponential. It is known that a simple quantization of those features (corresponding to replacing the complex exponential by a different periodic map that takes binary values, which is appealing for their transmission and storage), distorts the approximated kernel, which may be undesirable in practice. Our take-home message is that when the features of only one of the two signals are quantized, the original kernel is recovered without distortion; its practical interest appears in several cases where the kernel evaluations are asymmetric by nature, such as a client-server scheme. Concretely, we introduce the general framework of asymmetric random periodic features, where the two signals of interest are observed through random periodic features: random projections followed by a general periodic map, which is allowed to be different for both signals. We derive the influence of those periodic maps on the approximated kernel, and prove uniform probabilistic error bounds holding for all signal pairs from an infinite low-complexity set. Interestingly, our results allow the periodic maps to be discontinuous, thanks to a new mathematical tool, i.e. the mean Lipschitz continuity. We then apply this generic framework to semi-quantized kernel machines (where only one signal has quantized features and the other has classical random Fourier features), for which we show theoretically that the approximated kernel remains unchanged (with the associated error bound), and confirm the power of the approach with numerical simulations.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+      <li><div class="publi">
+        <strong>Compressive Learning with Privacy Guarantees</strong><br />
+        <mark>Antoine Chatalic</mark>, <em>Vincent Schellekens</em>, <mark>Florimond Houssiau, Yves-Alexandre de Montjoye, Laurent Jacques, Rémi Gribonval</mark><br />
+        Accepted in: Information and Inference: A Journal of the IMA.
+        <div class="publi_links">
+          <a href="https://hal.inria.fr/hal-02496896/" title="hal:02496896">HAL</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'This work addresses the problem of learning from large collections of data with privacy guarantees. The compressive learning framework proposes to deal with the large scale of datasets by compressing them into a single vector of generalized random moments, from which the learning task is then performed. We show that a simple perturbation of this mechanism with additive noise is sufficient to satisfy differential privacy, a well established formalism for defining and quantifying the privacy of a random mechanism. We combine this with a feature subsampling mechanism, which reduces the computational cost without damaging privacy. The framework is applied to the tasks of Gaussian modeling, k-means clustering and principal component analysis (PCA), for which sharp privacy bounds are derived. Empirically, the quality (for subsequent learning) of the compressed representation produced by our mechanism is strongly related with the induced noise level, for which we give analytical expressions.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+        
+      <li><div class="publi">
+        <strong>Quantized Compressive K-Means</strong>
+        <div class="download_icon">
+          <a href="Resources/spl_QCKM-2018.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div> <br />
+        <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        In: IEEE Signal Processing Letters, Vol. 25, no. 8, p. 1211-1215, 2018.
+        <div class="publi_links">
+          <a href="https://ieeexplore.ieee.org/document/8386678" title="doi:10.1109/LSP.2018.2847908">DOI</a>;
+          <a href="https://arxiv.org/abs/1804.10109" title="arXiv:1804.10109">arXiv</a>;
+          <a href="http://hdl.handle.net/2078.1/202890" title="dial:2078.1/202890">dial</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'The recent framework of compressive statistical learning aims at designing tractable learning algorithms that use only a heavily compressed representation-or sketch-of massive datasets. Compressive K-Means (CKM) is such a method: it estimates the centroids of data clusters from pooled, non-linear, random signatures of the learning examples. While this approach significantly reduces computational time on very large datasets, its digital implementation wastes acquisition resources because the learning examples are compressed only after the sensing stage. The present work generalizes the sketching procedure initially defined in Compressive K-Means to a large class of periodic nonlinearities including hardware-friendly implementations that compressively acquire entire datasets. This idea is exemplified in a Quantized Compressive K-Means procedure, a variant of CKM that leverages 1-bit universal quantization (i.e. retaining the least significant bit of a standard uniform quantizer) as the periodic sketch nonlinearity. Trading for this resource-efficient signature (standard in most acquisition schemes) has almost no impact on the clustering performances, as illustrated by numerical experiments.');" style="font-style: italic;">(More)</div>
+      </div></li>
+    </ol>
+
+    <h2>Conference/workshop papers</h2>
+    <ol>
+        
+      <li><div class="publi">
+        <strong>When compressive learning fails: blame the decoder or the sketch?</strong>
+        <div class="download_icon">
+          <a href="Resources/itwist-2020-slides.pdf"><img src="img/ico_slides.png" alt="slides icon" /></a>
+          <a href="Resources/itwist-2020.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div> <br />
+        <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        Accepted at the <a href="https://itwist20.ls2n.fr/" title="international Traveling Workshop on Interactions between low-complexity data models and Sensing Techniques">iTWIST'20</a> workshop.
+      </div></li>
+        
+      <li><div class="publi">
+        <strong>Compressive Learning of Generative Networks</strong>
+        <div class="download_icon">
+          <a href="https://github.com/schellekensv/CL-GN"><img src="img/ico_github.png" alt="github icon" /></a>
+          <a href="Resources/esann-2020-slides.pdf"><img src="img/ico_slides.png" alt="slides icon" /></a>
+          <a href="Resources/esann-2020.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div><br /> <!-- end of article title --> 
+        <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        Accepted at: <a href="https://www.esann.org/">ESANN'20, Bruges, Belgium</a>.
+        <div class="publi_links">
+          <a href="https://arxiv.org/abs/2002.05095" title="arXiv:2002.05095">arXiv</a>;
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'Generative networks implicitly approximate complex densities from their sampling with impressive accuracy. However, because of the enormous scale of modern datasets, this training process is often computationally expensive. We cast generative network training into the recent framework of compressive learning: we reduce the computational burden of large-scale datasets by first harshly compressing them in a single pass as a single sketch vector. We then propose a cost function, which approximates the Maximum Mean Discrepancy metric, but requires only this sketch, which makes it time- and memory-efficient to optimize.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+      <li><div class="publi">
+        <strong>Compressive k-Means with Differential Privacy</strong>
+        <div class="download_icon">
+          <a href="Resources/spars-2019-poster.pdf"><img src="img/ico_poster.png" alt="poster icon" /></a>
+          <a href="Resources/spars-2019.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div><br /> <!-- end of article title --> 
+        <em>Vincent Schellekens</em>, <mark>Antoine Chatalic, Florimond Houssiau, Yves-Alexandre de Montjoye, Laurent Jacques, Rémi Gribonval</mark><br />
+        Accepted at <a href="http://www.spars-workshop.org/en/index.html">SPARS'19, Toulouse, France</a>.
+        <div class="abstract" onClick="showAbstract(this,'In the compressive learning framework, one harshly compresses a whole training dataset into a single vector of generalized random moments, the sketch, from which a learning task can subsequently be performed. We prove that this loss of information can be leveraged to design a differentially private mechanism, and study empirically the privacy-utility tradeoff for the k-means clustering problem.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+      <li><div class="publi">
+        <strong>Differentially Private Compressive K-Means</strong>
+        <div class="download_icon">
+          <a href="Resources/icassp-2019-slides.pdf"><img src="img/ico_slides.png" alt="slides icon" /></a>
+          <a href="Resources/icassp-2019.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div> <br /> <!-- end of article title --> 
+        <em>Vincent Schellekens</em>, <mark>Antoine Chatalic, Florimond Houssiau, Yves-Alexandre de Montjoye, Laurent Jacques, Rémi Gribonval</mark><br />
+        Accepted at <a href="https://2019.ieeeicassp.org/">ICASSP'19, Brighton, UK</a>.
+        <div class="publi_links">
+          <a href="http://hdl.handle.net/2078.1/212802" title="dial:2078.1/212802">dial</a>;
+          <a href="https://hal.inria.fr/hal-02060208/" title="hal:02060208">HAL</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'This work addresses the problem of learning from large collections of data with privacy guarantees. The sketched learning framework proposes to deal with the large scale of datasets by compressing them into a single vector of generalized random moments, from which the learning task is then performed. We modify the standard sketching mechanism to provide differential privacy, using addition of Laplace noise combined with a subsampling mechanism (each moment is computed from a subset of the dataset). The data can be divided between several sensors, each applying the privacy-preserving mechanism locally, yielding a differentially-private sketch of the whole dataset when reunited. We apply this framework to the k-means clustering problem, for which a measure of utility of the mechanism in terms of a signal-to-noise ratio is provided, and discuss the obtained privacy-utility tradeoff.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+      <li><div class="publi">
+        <strong>Compressive Classification (Machine Learning without learning)</strong>
+        <div class="download_icon">
+          <a href="Resources/itwist-2018-slides.pdf"><img src="img/ico_slides.png" alt="slides icon" /></a>
+          <a href="Resources/itwist-2018.pdf"><img src="img/ico_pdf.png" alt="pdf icon" /></a>
+        </div><br />
+        <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        In: <a href="https://arxiv.org/html/1812.00648">proceedings</a> of the <a href="https://sites.google.com/view/itwist18" title="international Traveling Workshop on Interactions between low-complexity data models and Sensing Techniques">iTWIST'18</a> workshop, Marseille (France), 2018.
+        <div class="publi_links">
+          <a href="https://arxiv.org/abs/1812.01410" title="arXiv:1812.01410">arXiv</a>;
+          <a href="http://hdl.handle.net/2078.1/209861" title="dial:2078.1/209861">dial</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'Compressive learning is a framework where (so far unsupervised) learning tasks use not the entire dataset but a compressed summary (sketch) of it. We propose a compressive learning classification method, and a novel sketch function for images.');" style="font-style: italic;">(More)</div>
+      </div></li>
+        
+      <li><div class="publi">
+        <strong>Taking the edge off quantization: projected back projection in dithered compressive sensing</strong><br />
+        <mark>Chunlei Xu</mark>, <em>Vincent Schellekens</em>, <mark>Laurent Jacques</mark><br />
+        In: 2018 IEEE Statistical Signal Processing Workshop (SSP), 2018.
+        <div class="publi_links">
+          <a href="https://arxiv.org/abs/1805.04348" title="arXiv:1805.04348">arXiv</a>;
+          <a href="http://hdl.handle.net/2078.1/209869" title="dial:2078.1/209869">dial</a>
+        </div>
+        <div class="abstract" onClick="showAbstract(this,'Quantized compressive sensing (QCS) deals with the problem of representing compressive signal measurements with finite precision representation, i.e., a mandatory process in any practical sensor design. To characterize the signal reconstruction quality in this framework, most of the existing theoretical analyses lie heavily on the quantization of sub-Gaussian random projections (e.g., Gaussian or Bernoulli). We show here that a simple uniform scalar quantizer is compatible with a large class of random sensing matrices known to respect, with high probability, the restricted isometry property (RIP). Critically, this compatibility arises from the addition of a uniform random vector, or \'dithering\', to the linear signal observations before quantization. In this setting, we prove the existence of (at least) one signal reconstruction method, i.e., the projected back projection (PBP), whose reconstruction error decays when the number of quantized measurements increases. This holds with high probability in the estimation of sparse signals and low-rank matrices. We validate numerically the predicted error decay as the number of measurements increases.');" style="font-style: italic;">(More)</div>
+      </div></li>
+
+      
+      
+    </ol>
+      
+      
+    <h2>Other oral presentations</h2>
+    <ol>
+      <li><div class="publi">
+        <strong>Generative models as data-driven priors: how to learn them efficiently?</strong>
+        <div class="download_icon">
+          <a href="Resources/wacg-2019-slides.pdf"><img src="img/ico_slides.png" alt="slides icon" /></a>
+        </div><br />
+        Presented at <a href="https://sites.uclouvain.be/CGWA/CGW221119">FNRS Contact Group "Wavelets and applications" 2019 meeting</a> (22/11/2019).
+        <div class="abstract" onClick="showAbstract(this,'”Generative models are the new sparsity” is a statement that appears more and more frequently. In this talk, I will first give an overview of what generative models are, and explain how (and when) they should be used as a data-driven prior in general inverse problems. I will then explain why generative networks are notoriously hard to train, and propose a compressive learning-based method to simplify this training. Compressive learning in a recent framework where models are trained not from the full dataset but from a heavily compressed sketch that summarizes only the required information, allowing, in this case, to train the generative model without explicit and repeated access to the whole database.');" style="font-style: italic;">(More)</div>
+      </div></li>
+    </ol>
+  </section>
+
+<script>
+function showAbstract(content,abstract) {
+    if (content.innerHTML === "(More)") {
+        content.style.fontStyle = "normal";
+        content.innerHTML = abstract;
+    }
+    else
+    {
+        content.style.fontStyle = "italic";
+        content.innerHTML = "(More)";
+    }
+}
+</script>
+
+</div> <!-- middle_wrapper -->
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+    Webmaster: Vincent Schellekens.
+  </footer>
+</div> <!-- main wrapper-->
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+/* FONTS */
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('Fonts/OpenSans-Light-webfont.eot');
+    src: url('Fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('Fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('Fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('Fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* MAIN */
+body
+{
+    background-color:   rgb(150, 193, 233);
+    font-family: 'open_sanslight', 'Trebuchet MS', Arial, sans-serif;
+}
+
+#main_wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(0, 119, 230);
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: rgb(26, 144, 255);
+}
+
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selfie
+{
+    height: 200px;
+    border:  1px solid rgb(21, 64, 123);
+}
+
+#name_and_logos
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#logos_cont
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#logos_cont img
+{
+    height: 40px;
+    margin-right: 12px;
+}
+
+
+
+h1 strong
+{
+    font-size: 52px;
+    color: rgba(0, 0, 0, 1);
+}
+
+h1
+{
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+/* NAV */
+nav table
+{
+    border-collapse: collapse;
+    margin: 20px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav td
+{
+    border: 2px solid rgb(0, 26, 51);
+}
+
+.nav_button, .nav_button_on
+{
+    width: 110px;
+    background-color: rgb(31, 104, 173);
+    color: rgb(204, 230, 255);
+    text-decoration: none;
+    font-weight: bold;
+    margin: -1px;
+    padding: 3px;
+}
+
+.nav_button_on
+{
+    background-color: rgb(15, 80, 150);
+}
+
+.nav_button:hover, .nav_button_on:hover
+{
+    background-color: rgb(0, 64, 128);
+    color: rgb(204, 230, 255);
+    text-decoration: none;
+}
+
+nav a
+{
+    margin: auto;
+}
+
+nav a:hover
+{
+    text-decoration: none;
+}
+
+/* CONTACT */
+#contact
+{
+    float: right;
+    font-size: 0.85em;
+    padding: 3px;
+    margin: 5px;
+    border: 3px double rgb(0, 26, 51);
+}
+
+#contact h2
+{
+    font-size: 1.3em;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
+#contact ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contact img
+{
+    width: 13px;
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+#contact_icons
+{
+    float: right;
+}
+
+/* CONTENT */
+#middle_wrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    max-width: 1300px;
+
+}
+
+section
+{
+    flex: 1;
+    background-color: white;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+h3
+{
+    font-size: 1.0em;
+}
+
+
+/* RESEARCH */
+.research_illu
+{
+    text-align: center;
+}
+
+.research_illu img
+{
+    width: 695px;
+}
+
+
+/* PUBLICATIONS */
+.publi
+{
+    margin-bottom: 10px;
+    /*background-color: yellow; /* FOR DEBUG */ 
+    max-width: 750px;
+}
+
+.publi em,mark /* for authors, incl me */
+{
+    font-style: italic;
+    background-color: white;
+}
+
+.publi em /* for authors but me only */
+{
+    text-decoration: underline;
+}
+
+.download_icon
+{
+    float: right;
+}
+
+.download_icon img
+{
+    margin-left: 8px;
+    width: 18px;
+}
+
+
+.abstract
+{
+    color: rgb(9, 33, 86);
+    text-align: justify;
+}
+
+.abstract:hover
+{
+    color: rgb(19, 111, 205);
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer
+{
+    font-size: 0.8em;
+    font-style: italic;
+    display: flex;
+}
